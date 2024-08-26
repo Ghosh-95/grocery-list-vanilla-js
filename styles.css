@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+}
+
+.container {
+    width: 25rem;
+    margin: 2rem auto 1rem;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    min-height: 100svh;
+}
+
+@media (max-width: 412px) {
+    .container {
+        height: max-content;
+    }
+}
+
+#add-to-list-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 0.7rem;
+}
+
+button,
+input {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-family: inherit;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+input {
+    background-color: #ebece5;
+}
+
+input:is(:focus, :focus-within) {
+    outline-color: #1ec41e;
+}
+
+#add-btn {
+    background: #1ec41e;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+}
+
+#add-btn:is(:hover, :active) {
+    background: #1ba51b;
+}
+
+#panda-image {
+    width: 20rem;
+}
+
+.lists {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    margin: 3rem auto 0;
+    padding-left: 1rem;
+}
+
+.lists li {
+    background: #1eabc4;
+    border-radius: 0.3rem;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.lists li span {
+    color: #fff;
+    font-size: 1.12rem;
+    padding: 0.6rem;
+}
+
+.lists li .delete-item-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.4rem 0.5rem;
+    background-color: #b62929;
+    color: #fff;
+    cursor: pointer;
+}
